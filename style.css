@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* header */
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 3px #333 !important;
+}
+
+header {
+    padding: 40px;
+    /* background-color: rgb(17, 124, 143); */
+    background-image: url(/images/scene.jpeg);
+    background-position: 100px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width:735px) {
+    header h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    header h1 {
+        font-size: 25px;
+    }
+}
+
+/* navbar */
+nav {
+    background-color: #333;
+    display: flex;
+}
+
+@media  screen and (max-width: 980px) {
+    nav {
+        flex-direction: column;
+        line-height: 10px;
+        padding: 20px;
+    }  
+    #login{
+        margin-left: 0 !important;
+    }
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+#login{
+    margin-left: auto;
+}
+
+.nav-button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* main */
+main {
+    background-color:azure;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    /* linear gradient generator */
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 18%, rgba(7,62,156,1) 83%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    padding: 20px;
+    margin: 70px 0px 10px 0px;
+    border-radius: 5px;
+}
+
+.bonafides .carousel-cell img{
+    width: 80%;
+    max-height: 500px;
+    border: 3px solid black;
+}
+
+.PCs .carousel-cell img{
+    width: 60%;
+    border: 3px solid black;
+    max-height: 700px;
+}
+
+.memos .carousel-cell img{
+    width: 60%;
+    border: 3px solid black;
+    max-height: 700px;
+}
+
+.IDs .carousel-cell img{
+    width: 45%;
+    max-height: 500px;
+    border: 3px solid black;
+}
+
+.proofs div div img{
+    width: 60%;
+    border: 3px solid black;
+    max-height: 700px;
+}
+
+iframe{
+    width: 95%;
+    min-height: 500px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+section:nth-child(even) {
+    background-color:antiquewhite;
+}
+
+.founder img{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    border: 5px solid skyblue;
+    border-radius: 50%;
+}
+
+.founder h1{
+    padding: 50px 0 30px 0;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgb(17, 124, 143);
+}
+
+
+.founder b{
+    margin: 20px;
+    display: inline-block;
+    word-spacing: 15px;
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+    .founder b{
+        margin: 20px;
+        display: inline-block;
+        word-spacing: 5px;
+        letter-spacing: 1px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .founder p{
+        padding: 5px 30px 25px 30px !important;
+    }
+}
+
+.social-media a img{
+    height: 60px;
+    width: 80px;
+    border: none;
+    border-radius: 0;
+    display: inline;
+    padding-left: 20px;
+}
+
+.founder p{
+    padding: 5px 130px 25px 130px;
+}
+
+/* external css: flickity.css */
+.carousel-cell{
+  width: 66%;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
